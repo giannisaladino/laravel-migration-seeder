@@ -9,7 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Trains</h1>
+        <div class="row">
+            @foreach ($trains as $train )
+                <h1>{{ $train->stazione_di_arrivo }}</h1>
+            @endforeach
+        </div>
     </div>
 </body>
 </html>

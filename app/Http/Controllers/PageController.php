@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function home() {
-    return view('home');
+
+        $trains = Trains::all();
+
+    return view('home', compact('trains'));
     }
 }
