@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime('orario_di_partenza');
             $table->dateTime('orario_di_arrivo');
             $table->string('codice_treno', 20);
-            $table->double('numero_carrozze',10,2);
+            $table->tinyInteger('numero_carrozze');
             $table->string('in_orario')->nullable();
             $table->string('cancellato')->nullable();
             $table->timestamps();

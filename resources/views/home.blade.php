@@ -12,6 +12,7 @@
         <div class="row">
             @foreach ($trains as $train )
                 <h1>{{ $train->stazione_di_arrivo }}</h1>
+                <h1>{{ $train->orario_di_partenza }}</h1>
             @endforeach
         </div>
     </div>
